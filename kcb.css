@@ -1,0 +1,14 @@
+body{
+    color: #333;
+    font-family: 'DINPro-Regular',sans-serif;
+    font-size: 18px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+    margin: 0;
+}
