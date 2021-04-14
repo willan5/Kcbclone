@@ -2,6 +2,12 @@ body{
     color: #333;
     font-family: 'DINPro-Regular',sans-serif;
     font-size: 18px;
+    padding-top:160px;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    background: transparent;
+    
 }
 header{
     position: fixed;
@@ -11,4 +17,39 @@ header{
     z-index: 1000;
     display: block;
     margin: 0;
+}
+header.top-header{
+    background-color: black;
+    height: 60px;
+    padding-right: 40px;
+    text-align: right;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+header.top-header.scroll{
+    margin-top: -60px;
+}
+div{
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border: 0px;
+    outline: 0px;
+    font-size: 100%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+
+
+
 }
