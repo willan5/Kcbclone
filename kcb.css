@@ -156,3 +156,89 @@ img {
     border: none;
     display: block;
 }
+header .bank{
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+span{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+header .country-selector {
+    margin-left: 20px;
+}
+.country-selector {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+header .country-selector > a {
+    line-height: 50px;
+}
+.country-selector > a {
+    display: block;
+    font-size: 0;
+    color: #fff;
+    padding-right: 24px;
+    position: relative;
+}
+.country-selector .flag.ke {
+    background-position: 0 0;
+        background-position-x: 0px;
+        background-position-y: 0px;
+}
+.country-selector .flag {
+    background: url("flag.png") 0 0 no-repeat;
+    width: 32px;
+    height: 22px;
+    background-size: 600%;
+}
+.country-selector span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.country-selector .country-code {
+    font-family: 'DINPro-Light',sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+}
+.country-selector span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.country-selector > a::after {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Font Awesome\ 5 Free' !important;
+    content: "\f107";
+    font-weight: 900;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+}
