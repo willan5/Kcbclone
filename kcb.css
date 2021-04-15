@@ -6,8 +6,18 @@ body{
     background-color: white;
     height: 100%;
     margin: 0;
-    background: transparent;
-    
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    -webkit-text-size-adjust: none;
+}
+html{
+    height: 100%;
 }
 header{
     position: fixed;
@@ -17,19 +27,6 @@ header{
     z-index: 1000;
     display: block;
     margin: 0;
-}
-header.top-header{
-    background-color: black;
-    height: 60px;
-    padding-right: 40px;
-    text-align: right;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-header.top-header.scroll{
-    margin-top: -60px;
 }
 div{
     margin-right: 0px;
@@ -41,6 +38,91 @@ div{
     border: 0px;
     outline: 0px;
     font-size: 100%;
+}
+header .top-header{
+    background-color: black;
+    height: 60px;
+    padding-right: 40px;
+    text-align: right;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+header .top-header .scroll{
+    margin-top: -60px;
+}
+
+*{
+    box-sizing:border-box;
+}
+nav{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+header .top-header nav {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+header .top-header nav a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #fff;
+    font-family: 'DINPro-Light',sans-serif;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /*padding-right: 20px;
+    padding-left: 20px;*/
+    
+}
+header .top-header nav a:hover {
+    color: #2dccd3;
+}
+header .top-header nav a.sahl {
+    background-color: #0c6c63;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    line-height: 36px;
+    margin-left: 20px;
+    font-size: 14px;
+    
+}
+header  .top-header nav a.internet-banking {
+    background-color: #2dccd3;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    line-height: 36px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+header .top-header nav a.vooma {
+    background-color: #891755;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-left: 20px;
+    line-height: 36px;
+    font-size: 14px;
+}
+header .middle-bar{
+    height: 50px;
+    background-color:#003d4c;
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
@@ -49,7 +131,27 @@ div{
     background-size: auto;
     background-origin: padding-box;
     background-clip: border-box;
-
-
-
+    color: white;
+    display: table;
+    width: 100%;
+}
+header .middle-bar .middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+header .middle-bar .middle .left {
+    font-size: 0;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
 }
