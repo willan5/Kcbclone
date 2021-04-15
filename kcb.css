@@ -142,9 +142,10 @@ header .middle-bar .middle {
 header .middle-bar .middle .left {
     font-size: 0;
 }
-.logo {
+header .logo {
     display: inline-block;
     vertical-align: middle;
+    width:151px;
 }
 img {
     max-width: 100%;
