@@ -237,9 +237,9 @@ header .country-selector > a {
     font-variant: normal;
     text-transform: none;
 }
-header .country-selector .open .countries-list {
+/*header .country-selector .open .countries-list {
     display: block;
-}
+}*/
 header .countries-list {
     position: absolute;
     top: 100%;

@@ -5,16 +5,17 @@
         <title>KCB BANK CLONE</title>
         <link rel="stylesheet" href="kcb.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
         <script>
             $(function(){
                 $(".country").on("click", function(e){
-		            $(this).parent().toggleClass('open');
-		            e.preventDefault();
-	            });
+                    $(this).parent().toggleClass('open');
+                    e.preventDefault();
+                });
+           
 
-    
-                    
+
+        
             });
         </script>
 		 
@@ -43,7 +44,7 @@
                     </a>
                     <span class="bank">Bank</span>
                     <div class="country-selector">
-                        <a href="#" class="country">
+                        <a class="country" href="#">
                             <span class="flag ke"></span>
                             <span class="country-code">KE</span>
                         </a>
