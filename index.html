@@ -6,6 +6,17 @@
         <link rel="stylesheet" href="kcb.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                $(".country").on("click", function(e){
+		            $(this).parent().toggleClass('open');
+		            e.preventDefault();
+	            });
+
+    
+                    
+            });
+        </script>
 		 
     </head>
     <body>
