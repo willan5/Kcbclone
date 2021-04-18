@@ -197,7 +197,7 @@ header .country-selector > a {
     padding-right: 24px;
     position: relative;
 }
-.country-selector .flag.ke {
+.country-selector .flag .ke {
     background-position: 0 0;
         background-position-x: 0px;
         background-position-y: 0px;
@@ -219,10 +219,6 @@ header .country-selector > a {
     position: relative;
     top: -1px;
 }
-.country-selector span {
-    display: inline-block;
-    vertical-align: middle;
-}
 .country-selector > a::after {
     width: 20px;
     height: 20px;
@@ -238,7 +234,84 @@ header .country-selector > a {
     content: "\f107";
     font-weight: 900;
     font-style: normal;
-    font-weight: normal;
     font-variant: normal;
     text-transform: none;
+}
+header .country-selector .open .countries-list {
+    display: block;
+}
+header .countries-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    width: 160px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2) , 0 3px 14px 2px rgba(0,0,0,.12) , 0 8px 10px 1px rgba(0,0,0,.14);
+}
+header .countries-list .country {
+    font-size: 14px;
+    color: #333;
+    margin-left: 8px;
+    position: relative;
+    top: -1px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+li{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+header .countries-list a {
+    padding: 10px;
+    display: block;
+}
+header .countries-list .flag {
+    width: 24px;
+    height: 16px;
+}
+header .countries-list .flag.ug {
+    background-position: -24px 0;
+}
+header .countries-list .flag.tz {
+    background-position: -48px 0;
+}
+header .countries-list .flag.rw {
+    background-position: -96px 0;
+}
+header .countries-list .flag.ss {
+    background-position: -72px 0;
+}
+header .countries-list .flag.bi {
+    background-position: -120px 0;
+}
+header .countries-list .flag.bi {
+    background-position: -120px 0;
 }
