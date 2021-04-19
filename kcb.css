@@ -298,29 +298,120 @@ li{
     background-origin: padding-box;
     background-clip: border-box;
 }
+/*Display of the name of countries against their respective flags*/
 header .countries-list a {
     padding: 10px;
     display: block;
 }
+/*Size of all the flags basing on width and height*/
 header .countries-list .flag {
     width: 24px;
     height: 16px;
 }
+/*UG flag*/
 header .countries-list .flag.ug {
     background-position: -24px 0;
 }
+/*Tz flag*/
 header .countries-list .flag.tz {
     background-position: -48px 0;
 }
+/*Rwandan Flag*/
 header .countries-list .flag.rw {
     background-position: -96px 0;
 }
+/*South sudan flag*/
 header .countries-list .flag.ss {
     background-position: -72px 0;
 }
+/*Burundi flag*/
 header .countries-list .flag.bi {
     background-position: -120px 0;
 }
+/*Burundi flag*/
 header .countries-list .flag.bi {
     background-position: -120px 0;
+    /*End of the country selection pop down menu*/
+}
+/*Right side of the middle bar*/
+header .middle-bar .middle.right {
+    padding-right: 30px;
+    text-align: right;
+    font-size: 0;
+}
+header .middle-bar .middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*This is a navigation styling, it has an id because navs had already been styled, since i dont want the same styling on this
+nav, it has the id nav2 to avoid it from being styled as the nav above*/
+#nav2 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+/*Styling for a lements within nav2*/
+#nav2 a{
+    font-size: 14px;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+/*Search button styling*/
+header .btn-search {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    z-index: 2000;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-family: 'Font Awesome\ 5 Free' !important;
+    font-weight: 900;
+}
+header .btn-search::before {
+    position: relative;
+    z-index: 2;
+}
+.icon-search::before {
+    content: "\f002";
+}
+header .btn-search::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.btn-menu {
+    display: none;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    color: #fff;
 }
