@@ -550,11 +550,11 @@ form{
 }
 .main-search.is-visible .btn-search-close {
     transform: translateY(-50%) scale(1);
-}
+}/*
 .cover-layer.search-form-visible {
     opacity: 1;
     visibility: visible;
-}
+}/*
 .cover-layer {
     display: block;
     position: fixed;
@@ -565,7 +565,7 @@ form{
     width: 100%;
     background: rgba(0,0,0,.5);
     transition: opacity .3s , visibility .3s;
-}
+}/*
 .animate-search .main-search.is-visible {
     animation-name: cd-slide-in;
     animation-duration: 0.3s;
@@ -577,3 +577,113 @@ form{
     animation-play-state: running; 
 }
 /*Header ends here*/
+#banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.3);
+}
+#banner.home {
+    height: calc(100vh - 120px);
+}
+#banner {
+    position: relative;
+    background-color: #003643;
+    margin-top: -120px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: block;
+}
+#banner .wrapper {
+    display: table;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+.wrapper {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+#banner .middle {
+    padding-top: 50px;
+    vertical-align: middle;
+    display: table-cell;
+}
+#banner.home h1 {
+    font-family: 'DINPro-Bold',sans-serif;
+}
+#banner h1 {
+    font-size: 52px;
+    max-width: 800px;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -1.8px;
+    text-shadow: 0 2px 10px rgba(0,1,0,.25);
+}
+h1{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+#banner .primary-btn {
+    margin-top: 54px;
+}
+.primary-btn {
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    border: 0 none;
+    display: inline-block;
+    background-color: #84bd00;
+    color: #fff;
+    font-family: 'DINPro-Medium',sans-serif;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0 110px 0 30px;
+    position: relative;
+    min-width: 250px;
+    border-radius: 4px;
+    transition: all .3s ease 0s;
+}
+.primary-btn.btn-video::after {
+    content: "\f04b";
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    background-color: #71ae00;
+    border-radius: 0 4px 4px 0;
+    transition: all .3s ease 0s;
+    font-family: 'Font Awesome\ 5 Free' !important;
+    font-weight: 900;
+}
