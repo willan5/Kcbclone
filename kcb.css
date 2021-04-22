@@ -53,7 +53,10 @@ header .top-header .scroll{
     margin-top: -60px;
 }
 
-*{
+/**{
+    box-sizing:border-box;
+}*/
+*,::after, ::before{
     box-sizing:border-box;
 }
 nav{
@@ -360,20 +363,18 @@ nav, it has the id nav2 to avoid it from being styled as the nav above*/
 }
 /*Search button styling*/
 header .btn-search {
-    height: 50px;
     line-height: 50px;
     font-size: 20px;
-    width: 50px;
-    display: inline-block;
-    position: relative;
     text-align: center;
     color: #fff;
+    display: inline-block;
+    position: relative;
     vertical-align: middle;
-    z-index: 2000;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    z-index: 2000;
 }
 [class^="icon-"], [class*=" icon-"] {
     font-style: normal;
@@ -398,7 +399,6 @@ header .btn-search::after {
     transform: translateX(-50%) translateY(-50%) scale(0);
     height: 100%;
     width: 100%;
-    background-color: #fff;
     border-radius: 50%;
     transition-property: all;
     transition-duration: 0.3s;
@@ -415,3 +415,165 @@ header .btn-search::after {
     font-size: 30px;
     color: #fff;
 }
+header .btn-search.search-form-visible {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    transform: translateX(-60px) translateY(-5px);
+    color: #fff;
+}
+header .bottom-bar {
+    padding-left: 80px;
+    position: relative;
+}
+header .sub-nav-wrapper {
+    background-color: #84bd00;
+    height: 50px;
+    padding: 0 70px;
+}
+header .sub-nav-wrapper::before {
+    left: 80px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    top: 0;
+    border-top: 25px solid #71ae00;
+    border-right: 35px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 35px solid #71ae00;
+}
+header .sub-nav-wrapper .sub-nav {
+    font-size: 0;
+    text-align: center;
+}
+.main-search {
+    position: absolute;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1b1b1b;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-search .btn-search-close {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    transform: translateY(-50%) scale(1);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+header .btn-search.search-form-visible::after {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    background-color: #84bd00;
+}
+.main-search .tbl {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 60px;
+}
+.main-search form {
+    position: relative;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+form{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+.main-search .btn-search-close {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.icon-close::before {
+    content: "\f00d";
+    
+}
+.main-search .btn-search-close:hover, .main-search .btn-search-close:focus {
+    opacity: .7;
+}
+.main-search input[type="search"] {
+    width: 100%;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 300;
+    height: 100%;
+    background-color: transparent;
+    padding-right: 140px;
+    border: 0 none;
+    display: block;
+    font-family: 'DINPro-Light',sans-serif;
+    transition: all .3s ease 0s;
+}
+.main-search.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.main-search.is-visible .btn-search-close {
+    transform: translateY(-50%) scale(1);
+}
+.cover-layer.search-form-visible {
+    opacity: 1;
+    visibility: visible;
+}
+.cover-layer {
+    display: block;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    transition: opacity .3s , visibility .3s;
+}
+.animate-search .main-search.is-visible {
+    animation-name: cd-slide-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+}
+/*Header ends here*/
