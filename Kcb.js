@@ -34,7 +34,7 @@ $(function(){ //Country trigger
       closeSearchForm();
     });
 
-
+//Revert header back to position after scroll
     var $header = $('header');
   var offset = 60;
   $(window).scroll(function () {
