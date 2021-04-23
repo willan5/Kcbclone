@@ -33,6 +33,17 @@ $(function(){ //Country trigger
     coverLayer.on('click', function () {
       closeSearchForm();
     });
+
+
+    var $header = $('header');
+  var offset = 60;
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > offset) {
+      $header.addClass('scroll');
+    } else {
+      $header.removeClass('scroll');
+    }
+  });
       
 });
         
