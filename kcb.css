@@ -16,6 +16,16 @@ body{
     background-clip: border-box;
     -webkit-text-size-adjust: none;
 }
+body::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s 0s , visibility 0s .3s;
+}
 html{
     height: 100%;
     margin: 0;
@@ -110,6 +120,15 @@ a{
 header .top-header nav a:hover {
     color: #2dccd3;
 }
+header .top-header nav a.internet-banking:hover {
+    background-color: #84bd00;
+}
+header .top-header nav a.sahl:hover {
+    background-color: #084a44;
+}
+header .top-header nav a.vooma:hover {
+    background-color: #681140;
+}
 header .top-header nav a.sahl {
     background-color: #0c6c63;
     border-top-left-radius: 4px;
@@ -119,6 +138,7 @@ header .top-header nav a.sahl {
     line-height: 36px;
     margin-left: 20px;
     font-size: 14px;
+    color:#fff;
     
 }
 header  .top-header nav a.internet-banking {
@@ -130,6 +150,7 @@ header  .top-header nav a.internet-banking {
     line-height: 36px;
     margin-left: 20px;
     font-size: 14px;
+    color:#fff;
 }
 header .top-header nav a.vooma {
     background-color: #891755;
@@ -140,6 +161,7 @@ header .top-header nav a.vooma {
     margin-left: 20px;
     line-height: 36px;
     font-size: 14px;
+    color:#fff;
 }
 header .middle-bar{
     height: 50px;
@@ -370,6 +392,9 @@ nav, it has the id nav2 to avoid it from being styled as the nav above*/
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
+}
+#nav2 a:hover {
+    color: #84bd00;
 }
 /*Styling for a lements within nav2*/
 #nav2 a{
@@ -746,6 +771,7 @@ h1, h2,  h3, h4{
     display: block;
     font-family: 'DINPro-Medium',sans-serif;
     font-size: 24px;
+    color: #333;
     padding: 16px 0;
     position: relative;
 }
@@ -936,7 +962,42 @@ p {
     -webkit-touch-callout: none;
     -moz-transform: translate3d(0,0,0);
     transform: translate3d(0px, 0px, 0px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     position: relative;
+}
+.owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.owl-carousel .owl-item .owl-lazy {
+    transition: opacity .35s , transform .6s;    
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0px, 0px, 0px);
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    touch-action: manipulation;
+}
+.owl-carousel .owl-stage::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.products-slider .pic-wrapper:hover img {
+    transform: scale3d(1,1,1);
 }
 .home-tab-content {
     display: none;
@@ -1149,21 +1210,11 @@ p {
 .latest-articles .featured .primary-btn::after {
     border-radius: 0;
 }
-.primary-btn {
-    height: 60px;
-    line-height: 60px;
-    cursor: pointer;
-    border: 0 none;
-    display: inline-block;
-    background-color: #84bd00;
-    color: #fff;
-    font-family: 'DINPro-Medium',sans-serif;
-    text-align: left;
-    font-size: 18px;
-    margin: 0;
-    padding: 0 110px 0 30px;
-    min-width: 250px;
-    transition: all .3s ease 0s;
+.primary-btn:hover::after {
+    background-color: #003644;
+}
+.primary-btn:hover {
+    background-color: #003d4c;;
 }
 .products-slider .primary-btn {
     position: absolute;

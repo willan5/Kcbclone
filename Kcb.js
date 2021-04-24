@@ -47,7 +47,105 @@ $(function(){ //Country trigger
 
 
 
-  //Home Products//
+  //Home Products
+ 
+  
+      
+        $('.home-products-tabs a').on('click', function () {
+        var tabID = $(this).attr('href');
+        $('.home-products-tabs a').removeClass('active');
+        $(this).addClass('active');
+        $('.home-tab-content').removeClass('active');
+        $(tabID).addClass('active');
+        if ($(tabID + ' .products-slider').length) {
+          $(tabID + ' .products-slider').owlCarousel({
+            items: 4,
+            responsiveRefreshRate: 0,
+            autoplay: true,
+            loop: false,
+            lazyLoad: true,
+            nav: true,
+            dots: false,
+            navContainer: tabID + ' .products-nav',
+            navText: [
+              '<i class=\'icon-arrow-left\'></i>',
+              '<i class=\'icon-arrow-right\'></i>'
+            ],
+            margin: 40,
+            onInitialized: function () {
+              $(tabID + ' .products-slider .item .desc').matchHeight();
+            },
+            onTranslate: function () {
+              $(tabID + ' .products-slider .item .desc').matchHeight();
+            },
+            onTranslated: function () {
+              $(tabID + ' .products-slider .item .desc').matchHeight();
+            },
+            responsive: {
+              0: {
+                items: 1
+              },
+              550: {
+                items: 2
+              },
+              820: {
+                items: 3
+              },
+              1300: {
+                items: 4
+              }
+            }
+          });
+        }
+        return false;
+      });
+      $('#home-products-dd').on('change', function () {
+        var tabID = $(this).val();
+        $('.home-tab-content').removeClass('active');
+        $(tabID).addClass('active');
+        if ($(tabID + ' .products-slider').length) {
+          $(tabID + ' .products-slider').owlCarousel({
+            items: 4,
+            responsiveRefreshRate: 0,
+            autoplay: true,
+            loop: false,
+            lazyLoad: true,
+            nav: true,
+            dots: false,
+            navContainer: tabID + ' .products-nav',
+            navText: [
+              '<i class=\'icon-arrow-left\'></i>',
+              '<i class=\'icon-arrow-right\'></i>'
+            ],
+            margin: 40,
+            onInitialized: function () {
+              $(tabID + ' .products-slider .item .desc').matchHeight();
+            },
+            onTranslate: function () {
+              $(tabID + ' .products-slider .item .desc').matchHeight();
+            },
+            onTranslated: function () {
+              $(tabID + ' .products-slider .item .desc').matchHeight();
+            },
+            responsive: {
+              0: {
+                items: 1
+              },
+              550: {
+                items: 2
+              },
+              820: {
+                items: 3
+              },
+              1300: {
+                items: 4
+              }
+            }
+          });
+        }
+        return false;
+      });
+  
   
       
 });
