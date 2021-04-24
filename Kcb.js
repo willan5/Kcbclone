@@ -44,6 +44,11 @@ $(function(){ //Country trigger
       $header.removeClass('scroll');
     }
   });
+
+
+
+  //Home Products//
+  
       
 });
         
