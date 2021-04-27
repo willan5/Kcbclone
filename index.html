@@ -5,12 +5,15 @@
         <title>KCB BANK CLONE</title>
         <link rel="stylesheet" href="kcb.css">
         <link href="http://fonts.cdnfonts.com/css/dinpro-regular" rel="stylesheet">
+        <script src="http://nojs.io/release/0.1.1/no.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-        <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+        <!--<script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/commonjs-require@1.4.6/node.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
         <script src="Kcb.js"></script>
-        <script src="kcb2.js"></script>
+        
 		 
     </head>
     <body>
@@ -172,17 +175,17 @@
                     </select>
                 </div>
             </div>
-            <div id="1" class="home-tab-content active">
+            <div id="1" class="home-tab-content active"><!--active-->
                 <div class="products-slider-tbl">
                     <div class="middle left">
                         <div class="nav-container">
-                            <div class="products-nav disabled">
-                                <button type="button" role="presentation" class="owl-prev disabled">
+                            <div class="products-nav"><!--this one--><!--disabled-->
+                               <!-- <button type="button" role="presentation" class="owl-prev disabled"><!--disabled
                                     <i class="icon-arrow-left"></i>
                                 </button>
-                                <button type="button" role="presentation" class="owl-next disabled">
+                                <button type="button" role="presentation" class="owl-next disabled"><!--disabled
                                     <i class="icon-arrow-right"></i>
-                                </button>
+                                </button>-->
                             </div>
                         </div>
                     </div>
@@ -190,7 +193,7 @@
                         <div class="products-slider owl-carousel owl-loaded owl-drag">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1169px;">  
-                                    <div class="owl-item active" style="width: 252.25px; margin-right: 40px;">
+                                    <div class="owl-item" style="width: 252.25px; margin-right: 40px;"><!--active-->
                                         <div class="item">
                                             <a href="/for-you/open-account/transactional-accounts/current-acccount" class="pic-wrapper">
                                                 <img class="owl-lazy" data-src="c.webp" alt="Current Account " src="c.webp" style="opacity: 1;" width="320" height="240">
@@ -205,7 +208,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 252.25px; margin-right: 40px;">
+                                    <div class="owl-item" style="width: 252.25px; margin-right: 40px;"><!--active-->
                                         <div class="item">
                                             <a href="/for-you/open-account/savings/goal-savings-account" class="pic-wrapper">
                                                 <img class="owl-lazy" data-src="G.webp" alt="Goal Savings Account " src="G.webp" style="opacity: 1;" width="320" height="240">
@@ -220,7 +223,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 252.25px; margin-right: 40px;">
+                                    <div class="owl-item" style="width: 252.25px; margin-right: 40px;"><!--Active-->
                                         <div class="item">
                                             <a href="/for-you/open-account/mobile-online/kcb-m-pesa" class="pic-wrapper">
                                                 <img class="owl-lazy" data-src="K.webp" alt="KCB M-PESA" src="K.webp" style="opacity: 1;" width="320" height="240">
@@ -235,7 +238,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 252.25px; margin-right: 40px;">
+                                    <div class="owl-item" style="width: 252.25px; margin-right: 40px;"> <!--Another active-->
                                         <div class="item">
                                             <a href="/for-you/get-a-loan/mortgages/home-loan" class="pic-wrapper">
                                                 <img class="owl-lazy" data-src="H.webp" alt="Home Loan " src="H.webp" style="opacity: 1;" width="320" height="240">
@@ -252,7 +255,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-dots disabled"></div>
+                            <div class="owl-dots disabled"></div><!--another one disabled-->
                         </div>
                     </div>
                 </div>

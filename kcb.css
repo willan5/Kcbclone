@@ -16,6 +16,12 @@ body{
     background-clip: border-box;
     -webkit-text-size-adjust: none;
 }
+@font-face {
+    font-family: 'DINPro-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINPro-Regular'), url('http://fonts.cdnfonts.com/css/dinpro-regular');
+}
 body::after {
     content: "";
     position: fixed;
@@ -421,7 +427,6 @@ header .btn-search {
 }
 [class^="icon-"], [class*=" icon-"] {
     font-style: normal;
-    font-weight: normal;
     font-variant: normal;
     text-transform: none;
     font-family: 'Font Awesome\ 5 Free' !important;
@@ -890,9 +895,6 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 .products-slider-tbl .middle.left .products-nav button.disabled i {
     opacity: .5;
 }
-.products-slider-tbl .middle.left .products-nav button.disabled {
-    cursor: default;
-}
 .products-slider-tbl .middle.left .products-nav button i {
     width: 60px;
     height: 60px;
@@ -996,6 +998,16 @@ p {
     line-height: 0;
     height: 0;
 }
+.owl-carousel.owl-hidden {
+    opacity: 0;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: none;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+}
+
 .products-slider .pic-wrapper:hover img {
     transform: scale3d(1,1,1);
 }
