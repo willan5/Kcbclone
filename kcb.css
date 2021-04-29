@@ -1447,3 +1447,7 @@ p {
 .secondary-footer .middle.right a {
     color: #666;
 }
+.social-media .label a:hover, .secondary-footer .middle.right a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
