@@ -1380,6 +1380,9 @@ p {
     color: #fff;
     margin-bottom: 10px;
 }
+.footer-links a:hover {
+    color: #2dccd3;
+}
 /*Lower footer*/
 .secondary-footer {
     padding: 40px;
