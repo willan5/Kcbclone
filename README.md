@@ -1,2 +1,2 @@
 # kcb
-Clone for https://ke.kcbgroup.com/
+Just another site
